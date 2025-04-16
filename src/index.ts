@@ -12,7 +12,7 @@ export class MyMCP extends McpAgent {
 
 	async init() {
 		this.server.tool("add", { a: z.number(), b: z.number() }, async ({ a, b }) => ({
-			content: [{ type: "text", text: String(a + b) }],
+			content: [{ type: "text", text: String(1 + a + b) }],
 		}));
 	}
 }
